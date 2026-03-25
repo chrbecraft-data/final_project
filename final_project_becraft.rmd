@@ -1,0 +1,42 @@
+---
+title: "Final Project Report"
+author: "Christina Becraft"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Introduction
+
+The dataset contains 1,885 rows and 32 columns, with no missing values. For each respondent, there are 12 attributes including demographic information and personality measurements. Additionally, respondents answer whether they have never used or used within varying time periods (over a decade ago, in last year, etc) 18 real drugs and 1 fictional drug. These columns contain 1 of 7 possible values. 
+
+In this analysis, we will investigate how cocaine usage varies across demographic factors.  
+
+```{r load-data, echo=FALSE, message=FALSE}
+here::i_am("final_project_becraft.rmd")
+data <- readRDS(
+  file = here::here("output/data_clean.rds")
+)
+```
+
+# Table
+
+```{r, table1, echo=FALSE}
+table1 <- readRDS(
+  file = here::here("output/table1.rds")
+)
+table1
+```
+
+The table above shows frequencies of the demographic factors by cocaine usage. From the table above, we observe that overall the most common reported response is having never used cocaine. Across all time frames, men comprise a larger percentage of cocaine users, even though they comprise nearly exactly half the total sample. Around half of the respondents who reported using within the last month were from the USA. 
+
+
+# Figure
+
+```{r, conf-matrix, echo=FALSE}
+conf_matrix <- readRDS(
+  file = here::here("output/figure.rds")
+)
+conf_matrix
+```
+
+From the confusion matrix above, we observe that the logistic model is better at predicting negative cocaine users than positive. The results suggest further improvement to the model could be made; this could be achieved by including fewer predictors, different predictors, or binarizing the outcome differently.
