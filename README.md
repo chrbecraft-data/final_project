@@ -5,6 +5,7 @@ This repository includes:
 - An output folder that stores the cleaned data, table one, and figure objects
 - A Makefile that builds the report
 - A markdown file to generate the report
+- renv lockfile
 
 # How to generate final report
 - Run make command
