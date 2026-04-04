@@ -13,3 +13,7 @@ output/figure.rds: code/02_make_figure.R output/data_clean.rds
 .PHONY: clean
 clean:
 	rm output/*.rds && rm *.html
+	
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"

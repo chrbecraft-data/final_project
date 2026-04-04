@@ -10,3 +10,7 @@ This repository includes:
 # How to generate final report
 - Run make command
 - Report contains an introduction to the data's background, and descriptions of the table and figure
+
+# How to synchronize package library
+- Navigate to project directory
+- Run make install
