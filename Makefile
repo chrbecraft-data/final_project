@@ -1,3 +1,6 @@
+report/final_project_becraft.html:
+	docker run -v "$$(pwd)/report":/project/report chrbecraft/final-project
+
 report.html: code/03_render_report.R final_project_becraft.rmd data_clean.rds output/table1.rds output/figure.rds 
 	Rscript code/03_render_report.R
 
