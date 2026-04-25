@@ -19,6 +19,7 @@ This repository includes:
 
 # How to build Docker image
 - Run docker pull chrbecraft/final-project
+- Link to DockerHub: https://hub.docker.com/repository/docker/chrbecraft/final-project/general
 
 # How to generate report with Docker 
 - Once in Docker container, run make
