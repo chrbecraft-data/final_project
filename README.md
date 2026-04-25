@@ -22,5 +22,5 @@ This repository includes:
 - Link to DockerHub: https://hub.docker.com/repository/docker/chrbecraft/final-project/general
 
 # How to generate report with Docker 
-- Once in Docker container, run make report/final_project_becraft.html
-- Local directory report should automatically be created and contain the .html report file
+- In project directory, run: make report/final_project_becraft.html
+- Final .html report should automatically be created in local "report" directory
