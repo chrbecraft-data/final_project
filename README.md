@@ -8,7 +8,7 @@ This repository includes:
 - renv lockfile
 - Dockerfile to build image to compile report in container
 
-# How to generate final report
+# How to generate final report (locally) 
 - Synchronize package library (see instructions below)
 - Run make command
 - Report contains an introduction to the data background, and descriptions of the table and figure
@@ -22,4 +22,5 @@ This repository includes:
 - Link to DockerHub: https://hub.docker.com/repository/docker/chrbecraft/final-project/general
 
 # How to generate report with Docker 
-- Once in Docker container, run make
+- Once in Docker container, run make report/final_project_becraft.html
+- Local directory report should automatically be created and contain the .html report file
