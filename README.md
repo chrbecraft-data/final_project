@@ -8,6 +8,7 @@ This repository includes:
 - renv lockfile
 
 # How to generate final report
+- Run make install (to sync with lockfile)
 - Run make command
 - Report contains an introduction to the data's background, and descriptions of the table and figure
 
